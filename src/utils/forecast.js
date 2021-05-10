@@ -18,7 +18,7 @@ const forecast = (log, lat, callback) => {
         response.body.current.temp
       )} degree Celcius Out. And its feels like ${kelvinToCelcius(
         response.body.current.feels_like
-      )}and the humidity is ${response.body.current.humidity}`;
+      )} and the humidity is ${response.body.current.humidity}`;
 
       callback(undefined, string);
     }
